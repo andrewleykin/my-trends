@@ -1,0 +1,19 @@
+section.package#package
+	.container
+		.package__wrap
+			.package__title
+				each val in content.package.title
+					span= val["text"]
+			.package__list
+				each package in content.package.list
+					.package__item
+						span.package__subname= content.package.package
+						h3.package__name= package["name"]
+						.package__descr
+							each texted in package["text"]
+								p.package__text= texted["p"]
+						.package__cost
+							= content.package.cost.before
+							span= package["cost"]
+							= content.package.cost.after
+						.package__btn= content.package.btn

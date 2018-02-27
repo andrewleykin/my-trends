@@ -1,0 +1,163 @@
+.preparation
+	padding-top 55px
+	padding-bottom 85px
+	background blue-color
+	color white
+
+.preparation__title
+	display flex
+	flex-direction column
+	align-items flex-start
+	font-size 48px
+	line-height 50px
+	font-weight 900
+	text-transform uppercase
+	margin-left 22px
+	span
+		padding 0px 20px 0px 15px
+		background red-color
+		display block
+
+.preparation__subtitle
+	display flex
+	flex-direction column
+	align-items flex-start
+	font-size 24px
+	line-height 28px
+	font-weight 700
+	text-transform uppercase
+	margin-left 22px
+	color dark-color
+	margin-bottom 90px
+	span
+		padding 0px 20px
+		background yellow-color
+		display block
+
+.preparation__content
+	position relative
+
+.preparation__road
+	background url(../img/content/preparation/road.png) no-repeat
+	max-width 875px
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	padding-right 66px
+	padding-left 29px
+	padding-top 22px
+
+.preparation__item
+	width 100%
+	max-width 260px
+	&:nth-child(2) {
+		margin-bottom 80px
+	}
+	&:nth-child(4) {
+		margin-bottom 60px
+	}
+	&:nth-child(7) {
+		margin-bottom 50px
+	}
+	&:nth-child(10) {
+		margin-left auto
+		margin-right 22px
+	}
+	&:nth-child(10),
+	&:nth-child(11) {
+		max-width 285px
+		.preparation__text {
+			padding-left 85px
+		}
+	}
+
+.preparation__head
+	display flex
+	margin-bottom 30px
+
+.preparation__num
+	display block
+	font-size 60px
+	line-height 44px
+	font-weight 700
+	margin-right 10px
+	padding-top 2px
+
+.preparation__name
+	font-size 24px
+	line-height 26px
+	font-weight 700
+	text-transform uppercase
+
+.preparation__text
+	font-size 14px
+	line-height 16px
+	padding-left 50px
+
+.preparation__form-wrap
+	position absolute
+	width 100%
+	max-width 340px
+	padding 26px 48px 50px
+	background white
+	top -112px
+	right 0
+	// &.fixed
+	// 	top 200px
+	// 	position fixed
+	// 	right 13%
+
+.preparation__form-title
+	font-size 38px
+	line-height 33px
+	font-weight 900
+	color blue-color
+	margin-bottom 25px
+
+.preparation__form-subtitle
+	display block
+	font-size 20px
+	line-height 20px
+	font-weight 900
+	margin-bottom 25px
+	color black-color
+
+.preparation__group
+	position relative
+	width 100%
+	&+&
+		margin-top 15px
+
+.preparation__input
+	height 42px
+	padding-left 18px
+	font-size 14px
+	width 100%
+	border 2px solid #9da7ad
+	border-radius 5px
+	@extend .trs
+	&:focus
+		border-color blue-color
+		&+.preparation__label
+			opacity 0
+
+.preparation__label
+	position absolute
+	left 18px
+	top 15px
+	color #6a6a6a
+	font-size 14px
+	@extend .trs
+
+.preparation__btn
+	background blue-color
+	color white
+	font-size 16px
+	font-weight 900
+	padding 20px 42px
+	display block
+	margin-top 15px
+	cursor pointer
+	@extend .trs
+	&:hover
+		background darken(blue-color, 20%) 

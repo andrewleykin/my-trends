@@ -1,0 +1,14 @@
+header.header
+	.container
+		.header__wrap
+			.header__logo
+				include logo
+			.header__menu
+				include menu
+			.header__mail
+				+icon(content.general.mail.icon)
+				a(href=content.general.mail.link)= content.general.mail.text
+			.header__info
+				a.header__phone(href=content.general.phone.link)= content.general.phone.text.start
+					span= content.general.phone.text.end
+				span.header__graphic= content.general.graphic

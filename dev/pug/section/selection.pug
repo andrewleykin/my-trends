@@ -1,0 +1,19 @@
+section.selection#selection
+	.container
+		.selection__wrap
+			.selection__info
+				span.selection__pretitle= content.selection.pretitle
+				h3.selection__title= content.selection.title
+				p.selection__subtitle= content.selection.subtitle
+				p.selection__text= content.selection.text
+			.selection__descr
+				span.selection__call= content.selection.call
+				a.selection__phone(href=content.general.phone.link)= content.general.phone.text.start
+					span= content.general.phone.text.end
+				span.selection__fill= content.selection.fill
+				form.selection__form(action="#")
+					each form in content.selection.form
+						.selection__group
+							input.selection__input(type= form["type"], name=form["name"], id=form["id"])
+							label.selection__label(for=form["id"])= form["label"]
+					button.selection__btn= content.selection.btn

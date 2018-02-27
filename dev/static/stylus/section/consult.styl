@@ -1,0 +1,111 @@
+.consult
+	margin-bottom 22px
+
+.consult__wrap
+	display flex
+	justify-content center
+	align-items flex-end
+
+.consult__info
+	padding 32px 20px 84px 0px
+	max-width 365px
+	width 100%
+	margin-right 10px
+	background gray-color
+	text-align right
+	text-transform uppercase
+	color dark-color
+
+.consult__logo
+	margin-bottom 50px
+
+.consult__name
+	font-size 18px
+	line-height 28px
+	font-weight 700
+	margin-bottom 20px
+
+.consult__address
+	font-size 16px
+	line-height 18px
+	max-width 196px
+	margin-left auto
+
+.consult__descr
+	margin-left 10px
+	max-width 430px
+	width 100%
+
+.consult__pretitle
+	font-size 24px
+	line-height 28px
+	font-weight 700
+	color dark-color
+	position relative
+	display block
+	padding-bottom 15px
+	margin-bottom 15px
+	&:after
+		content ''
+		display block
+		size(155px, 6px)
+		background red-color
+		position absolute
+		bottom 0
+		left 0
+
+.consult__title
+	font-weight 900
+	color blue-color
+	font-size 48px
+	line-height 44px
+	margin-bottom 35px
+
+.consult__group
+	position relative
+	width 100%
+	&+&
+		margin-top 15px
+
+.consult__input,
+.consult__textarea
+	height 70px
+	padding-left 30px
+	width 100%
+	border 1px solid #9da7ad
+	border-radius 5px
+	@extend .trs
+	&:focus
+		border-color blue-color
+		&+.consult__label
+			opacity 0
+
+.consult__textarea
+	height 220px
+	padding-top 25px
+
+.consult__label
+	position absolute
+	left 30px
+	top 28px
+	color #6a6a6a
+	font-size 14px
+	@extend .trs
+
+.consult__btn
+	background blue-color
+	color white
+	max-width 100%
+	width 100%
+	text-align center
+	font-size 18px
+	line-height 24px
+	font-weight 700
+	padding 25px 0
+	text-transform uppercase
+	cursor pointer
+	border-radius 5px
+	margin-top 10px
+	@extend .trs
+	&:hover,&:focus
+		background darken(blue-color, 20%) 

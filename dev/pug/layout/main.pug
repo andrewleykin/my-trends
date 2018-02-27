@@ -21,9 +21,15 @@ html(lang="ru-RU")
 		<![endif]-->
 		body
 			.wrapper
+				// Header
 				include ../modules/header
+				// / Header
+				// Content
 				block content
+				// / Content
+				// Footer
 				include ../modules/footer
+				// / Footer
 			script(src="app/js/libs.min.js")
-			script(src="app/js/main.js")
+			script(src="app/js/app.js")
 			block script

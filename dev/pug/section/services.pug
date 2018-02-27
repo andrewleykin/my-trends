@@ -1,0 +1,59 @@
+section.services#services
+	.container
+		.services__wrap
+			.services__item
+				.services__image
+					img(src="app/img/content/services/1.jpg", alt="Services 1")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name 
+						span.red Оформление ЭЦП 
+						| для участия в&nbsp;торгах
+					span.srevices__cost от 6 400 руб.
+			.services__item
+				.services__image
+					img(src="app/img/content/services/2.jpg", alt="Services 2")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name
+						span.red Аккредитация 
+						| на 5 федеральных площадках
+					span.srevices__cost от 6 000 руб.
+			.services__item
+				.services__image
+					img(src="app/img/content/services/3.jpg", alt="Services 3")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name
+						span.red Мониторинг 
+						| тендеров, <br>в течение 1 месяца
+					span.srevices__cost от 5 000 руб.
+			.services__item
+				.services__image
+					img(src="app/img/content/services/4.jpg", alt="Services 4")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name Подготовка заявки<br>и участие в аукционе
+					span.srevices__cost от 3 000 руб.
+			.services__item
+				.services__image
+					img(src="app/img/content/services/5.jpg", alt="Services 5")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name Подготовка сведений о&nbsp;материалах (
+						span.red форма 2
+						| )
+					span.srevices__cost от 5 000 руб.
+			.services__item
+				.services__image
+					img(src="app/img/content/services/6.jpg", alt="Services 6")
+					a.services__order(href="#")= content.services.order
+				.services__info
+					span.services__name Подготовка и 
+						span.red подача жалоб в ФАС
+					span.srevices__cost от 3 000 руб.
+			.services__descr
+				each descr in content.services.descr
+					.services__el
+						span.services__subname= descr["name"]
+						p.services__text= descr["text"]

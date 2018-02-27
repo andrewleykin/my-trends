@@ -1,0 +1,26 @@
+section.preparation
+	.container
+		.preparation__wrap
+			h3.preparation__title
+				each val in content.preparation.title
+					span= val["text"]
+			.preparation__subtitle
+				each val in content.preparation.subtitle
+					span= val["text"]
+			.preparation__content
+				.preparation__road
+					each preparation in content.preparation.list
+						.preparation__item
+							.preparation__head
+								span.preparation__num= preparation["num"]
+								h4.preparation__name= preparation["name"]
+							p.preparation__text= preparation["text"]
+				.preparation__form-wrap
+					h3.preparation__form-title= content.preparation.formTitle
+					span.preparation__form-subtitle= content.preparation.formSubtitle
+					form.preparation__form
+						each form in content.preparation.form
+							.preparation__group
+								input.preparation__input(type= form["type"], name=form["name"], id=form["id"])
+								label.preparation__label(for=form["id"])= form["label"]
+						button.preparation__btn= content.preparation.btn

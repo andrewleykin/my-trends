@@ -1,0 +1,34 @@
+section.reviews
+	.container
+		.reviews__wrap
+			h3.reviews__title= content.reviews.title.start
+				span.blue= content.reviews.title.end
+			.reviews__list
+				.reviews__item
+					.reviews__image
+						img(data-remodal-target="reviews1" src="app/img/content/reviews/1.jpg", alt="Reviews 1")
+					p.reviews__text Благодарственное письмо от&nbsp;ФГУ ДЕП 22
+				.reviews__item
+					.reviews__image
+						img(data-remodal-target="reviews2" src="app/img/content/reviews/2.jpg", alt="Reviews 2")
+					p.reviews__text Благодарственное письмо от&nbsp;группы компаний “БАЗИС”
+				.reviews__item
+					.reviews__image
+						img(data-remodal-target="reviews3" src="app/img/content/reviews/3.jpg", alt="Reviews 3")
+					p.reviews__text Благодарственное письмо от&nbsp;группы компаний “АИ ВИДЕО”
+				.reviews__item
+					.reviews__image
+						img(data-remodal-target="reviews4" src="app/img/content/reviews/4.jpg", alt="Reviews 4")
+					p.reviews__text Благодарственное письмо от&nbsp;ЗАО “РТС ТЕНДЕР”
+.remodal(data-remodal-id="reviews1")
+	button.remodal-close(data-remodal-action="close")
+	img(src="app/img/content/reviews/1.jpg", alt="Reviews 1")
+.remodal(data-remodal-id="reviews2")
+	button.remodal-close(data-remodal-action="close")
+	img(src="app/img/content/reviews/2.jpg", alt="Reviews 2")
+.remodal(data-remodal-id="reviews3")
+	button.remodal-close(data-remodal-action="close")
+	img(src="app/img/content/reviews/3.jpg", alt="Reviews 3")
+.remodal(data-remodal-id="reviews4")
+	button.remodal-close(data-remodal-action="close")
+	img(src="app/img/content/reviews/4.jpg", alt="Reviews 4")

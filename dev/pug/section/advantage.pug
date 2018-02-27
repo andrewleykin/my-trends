@@ -1,0 +1,22 @@
+section.advantage
+	.container
+		.advantage__wrap
+			.advantage__item
+				.advantage__icon
+					img(src="app/img/content/advantage/1.png", alt="Advantage 1")
+				p.advantage__text
+					span.red Более 9 лет успешной работы 
+					| на рынке тендерных услуг
+			.advantage__item
+				.advantage__icon
+					img(src="app/img/content/advantage/2.png", alt="Advantage 2")
+				p.advantage__text
+					span.red свыше 3 млрд. руб. 
+					| сумма выигранных контрактов <span class="nowrap">за 2016-2017</span>
+			each advantage in content.advantage.list
+				.advantage__item
+					.advantage__icon
+						img(src="app/img/content/"+advantage["img"], alt=advantage["alt"])
+					p.advantage__text
+						span.red= advantage["red"]
+						= advantage["text"]

@@ -1,7 +1,16 @@
 {
-  "navPages": {
-    "Главная страница" : "main.html",
-    "О компании" : "about.html",
-    "Каталог" : "catalog.html"
-  }
+  "nav": [
+  	{
+  		"link": "#services",
+  		"text": "УСЛУГИ"
+  	},
+  	{
+  		"link": "#package",
+  		"text": "ЦЕНЫ"
+  	},
+  	{
+  		"link": "#contact",
+  		"text": "КОНТАКТЫ"
+  	}
+  ]
 }

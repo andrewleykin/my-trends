@@ -1,0 +1,20 @@
+section.consult
+	.container
+		.consult__wrap
+			.consult__info
+				.consult__logo
+					img(src="app/img/general/"+content.general.logoBig.src, alt=content.general.logoBig.alt)
+				h1.consult__name= content.general.name
+				p.consult__address= content.consult.address
+			.consult__descr
+				span.consult__pretitle= content.consult.pretitle
+				h3.consult__title= content.consult.title
+				form.consult__form(action="#")
+					.consult__group
+						textarea.consult__textarea(id=content.consult.textarea.id name=content.consult.textarea.name)
+						label.consult__label(for=content.consult.textarea.id)= content.consult.textarea.label
+					each form in content.consult.form
+						.consult__group
+							input.consult__input(type= form["type"], name=form["name"], id=form["id"])
+							label.consult__label(for=form["id"])= form["label"]
+					button.consult__btn= content.consult.btn

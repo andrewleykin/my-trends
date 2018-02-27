@@ -1,0 +1,91 @@
+.package
+	margin-bottom 60px
+
+.package__title
+	display flex
+	flex-direction column
+	align-items flex-start
+	color white
+	font-size 30px
+	line-height 48px
+	font-weight 700
+	margin-bottom 60px
+	span
+		background purple-color 
+		display block
+		padding 0 30px
+
+.package__list
+	display flex
+	justify-content space-between
+	padding-left 30px
+
+.package__item
+	max-width 340px
+	color dark-color
+	&:nth-child(2)
+		.package__btn
+			background red-color
+			&:hover
+				background darken(red-color, 20%)
+
+.package__subname
+	display inline-block
+	font-size 24px
+	line-height 28px
+	font-weight 700
+	padding-bottom 14px
+	padding-right 80px
+	border-bottom 6px solid red-color
+	margin-bottom 15px
+	text-transform uppercase
+
+.package__name
+	display block
+	font-size 48px
+	line-height 44px
+	font-weight 900
+	color blue-color
+	margin-bottom 20px
+
+.package__descr
+	margin-bottom 40px
+
+.package__text
+	font-size 16px
+	line-height 18px
+	&+&
+		margin-top 20px
+
+.package__cost
+	color black-color
+	font-size 16px
+	line-height 16px
+	font-weight 900
+	display flex
+	align-items flex-end
+	margin-bottom 20px
+	&:after
+		content "*"
+		align-self flex-start
+		margin-left 2px
+		font-size 24px
+	span
+		font-size 24px
+		line-height 24px
+		margin 0 10px
+
+.package__btn
+	max-width 190px
+	background #808080
+	color white
+	cursor pointer
+	border-radius 5px
+	text-transform uppercase
+	font-size 20px
+	line-height 20px
+	font-weight 700
+	padding 12px 43px 10px 46px
+	@extend .trs
+	&:hover
+		background darken(#808080, 20%) 
