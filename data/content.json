@@ -315,7 +315,65 @@
     "title": {
       "start": "НАШИ",
       "end": "КЛИЕНТЫ"
-    }
+    },
+    "list": [
+      {
+        "src": "client/1.png",
+        "alt": "Client 1"
+      },
+      {
+        "src": "client/2.png",
+        "alt": "Client 2"
+      },
+      {
+        "src": "client/3.png",
+        "alt": "Client 3"
+      },
+      {
+        "src": "client/4.png",
+        "alt": "Client 4"
+      },
+      {
+        "src": "client/5.png",
+        "alt": "Client 5"
+      },
+      {
+        "src": "client/6.png",
+        "alt": "Client 6"
+      },
+      {
+        "src": "client/7.png",
+        "alt": "Client 7"
+      },
+      {
+        "src": "client/8.png",
+        "alt": "Client 8"
+      },
+      {
+        "src": "client/9.png",
+        "alt": "Client 9"
+      },
+      {
+        "src": "client/10.jpg",
+        "alt": "Client 10"
+      },
+      {
+        "src": "client/11.png",
+        "alt": "Client 11"
+      },
+      {
+        "src": "client/12.png",
+        "alt": "Client 12"
+      },
+      {
+        "src": "client/13.png",
+        "alt": "Client 13"
+      },
+      {
+        "src": "client/14.jpg",
+        "alt": "Client 14"
+      }
+    ]
   },
   "reviews": {
     "title": {
@@ -374,5 +432,30 @@
     "address": {
       "start": "Пресненская наб. д.12"
     }
+  },
+  "order": {
+    "subtitle": "ФОРМА ЗАКАЗА",
+    "title": "ЗАКАЗАТЬ УСЛУГУ",
+    "form": [
+      {
+        "name": "name",
+        "id": "name4",
+        "label": "Укажите ваше имя",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "id": "email3",
+        "label": "Укажите Email",
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "id": "phone4",
+        "label": "Введите номер телефона*",
+        "type": "phone"
+      }
+    ],
+    "btn": "ОТПРАВИТЬ ЗАПРОС"
   }
 }

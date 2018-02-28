@@ -3,3 +3,7 @@ section.client
 		.client__wrap
 			h2.client__title= content.client.title.start
 				span.blue= content.client.title.end
+			.client__list
+				each client in content.client.list
+					.client__item
+						img(src="app/img/content/"+client["src"], alt=client["alt"])

@@ -1,0 +1,89 @@
+.order
+	padding 20px 25px 25px 20px
+	background gray-color
+	text-align left
+	max-width 480px
+
+.order__close
+	font-size 0
+	left 85%
+	top 25px
+	width 40px
+	height 40px
+	z-index 2
+	background url("../img/general/close.png") center no-repeat
+	&:before
+		display none
+
+.order__subtitle
+	display block
+	margin-bottom 10px
+	font-size 24px
+	line-height 28px
+	font-weight 700
+	color dark-color
+	text-transform uppercase
+	padding-bottom 14px
+	position relative
+	&:after
+		content ''
+		display block
+		position absolute
+		bottom 0
+		left 0
+		size(155px, 8px)
+		background red-color
+
+.order__title
+	font-size 48px
+	line-height 44px
+	font-weight 900
+	text-transform uppercase
+	margin-bottom 45px
+	color blue-color
+
+.order__group
+	position relative
+	width 100%
+	&+&
+		margin-top 15px
+
+.order__input
+	padding-left 30px
+	height 68px
+	color black-color
+	font-size 14px
+	width 100%
+	border-radius 4px
+	border 2px solid #9da7ad
+	@extend .trs
+	&:focus
+		border-color blue-color
+		&+.order__label
+			opacity 0
+
+.order__label
+	color #6a6a6a
+	font-size 14px
+	position absolute
+	left 30px
+	top 25px
+	@extend .trs
+
+.order__btn
+	background blue-color
+	color white
+	width 100%
+	max-width 100% 
+	text-align center
+	font-size 24px
+	line-height 24px
+	font-weight 700
+	padding 24px 0px
+	text-transform uppercase
+	cursor pointer
+	border-radius 5px
+	margin-top 30px
+	@extend .trs
+	&:hover,&:focus
+		background darken(blue-color, 20%) 
