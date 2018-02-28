@@ -1,0 +1,44 @@
+.footer
+	position relative
+
+.footer__info
+	position absolute
+	width 100%
+	max-width 815px
+	top 30px
+	left 50%
+	transform translateX(-50%)
+	background white
+	display flex
+	padding 19px 80px 20px
+	box-shadow 0 0 24px 0 rgba(0, 0, 0, .3)
+
+.footer__contact
+	margin-right 110px
+	width 100%	
+	max-width 216px	
+
+.footer__phone
+	font-size 24px
+	font-weight 900
+	display block
+	margin-bottom 5px
+	@extend .trs
+	&:hover
+		color darken(black-color, 20%)
+
+.footer__mail
+	font-size 15px
+	@extend .trs
+	&:hover
+		color darken(black-color, 20%)
+
+.footer__address
+	font-size 24px
+	font-weight 900
+	color black-color
+	span
+		display block
+		font-weight 400
+		font-size 15px
+		letter-spacing 0.25px 

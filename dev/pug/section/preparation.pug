@@ -18,9 +18,9 @@ section.preparation
 				.preparation__form-wrap
 					h3.preparation__form-title= content.preparation.formTitle
 					span.preparation__form-subtitle= content.preparation.formSubtitle
-					form.preparation__form
+					form.preparation__form.form(action="#", data-validation='')
 						each form in content.preparation.form
 							.preparation__group
-								input.preparation__input(type= form["type"], name=form["name"], id=form["id"])
-								label.preparation__label(for=form["id"])= form["label"]
-						button.preparation__btn= content.preparation.btn
+								input.preparation__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])
+								label.preparation__label.label(for=form["id"])= form["label"]
+						button.preparation__btn(type="submit")= content.preparation.btn

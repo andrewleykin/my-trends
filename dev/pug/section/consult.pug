@@ -9,12 +9,12 @@ section.consult
 			.consult__descr
 				span.consult__pretitle= content.consult.pretitle
 				h3.consult__title= content.consult.title
-				form.consult__form(action="#")
+				form.consult__form.form(action="#", data-validation='')
 					.consult__group
-						textarea.consult__textarea(id=content.consult.textarea.id name=content.consult.textarea.name)
-						label.consult__label(for=content.consult.textarea.id)= content.consult.textarea.label
+						textarea.consult__textarea(id=content.consult.textarea.id name=content.consult.textarea.name , data-name=content.consult.textarea.name)
+						label.consult__label.label(for=content.consult.textarea.id)= content.consult.textarea.label
 					each form in content.consult.form
 						.consult__group
-							input.consult__input(type= form["type"], name=form["name"], id=form["id"])
-							label.consult__label(for=form["id"])= form["label"]
-					button.consult__btn= content.consult.btn
+							input.consult__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])
+							label.consult__label.label(for=form["id"])= form["label"]
+					button.consult__btn(type="submit")= content.consult.btn

@@ -15,7 +15,7 @@
         <header class="header">
           <div class="container">
             <div class="header__wrap">
-              <div class="header__logo">
+              <div class="header__logo" href="#top-banner">
                 <div class="logo"><img src="app/img/general/logo.png" alt="мои тренды"></div>
               </div>
               <div class="header__menu">
@@ -39,7 +39,7 @@
         <!-- / Header-->
         <!-- Content-->
         <!-- Top-banner-->
-        <section class="top-banner">
+        <section class="top-banner" id="top-banner">
           <div class="container">
             <div class="top-banner__wrap">
               <div class="top-banner__heading">
@@ -75,16 +75,16 @@
           <div class="container">
             <div class="top-form__wrap">
               <h2 class="top-form__title">ОТПРАВЬТЕ ЗАЯВКУ, ЧТОБЫ ПОЛУЧИТЬ ПОЛНЫЙ ПРАЙС-ЛИСТ</h2>
-              <form class="top-form__form" action="#">
+              <form class="top-form__form form" data-validation="">
                 <div class="top-form__group">
-                  <input class="top-form__input" type="text" name="name" id="name">
-                  <label class="top-form__label" for="name">Введите ваше имя</label>
+                  <input class="top-form__input" type="text" name="name" id="name" data-name="name">
+                  <label class="top-form__label label" for="name">Введите ваше имя</label>
                 </div>
                 <div class="top-form__group">
-                  <input class="top-form__input" type="email" name="email" id="email">
-                  <label class="top-form__label" for="email">Введите e-mail</label>
+                  <input class="top-form__input" type="email" name="email" id="email" data-name="email">
+                  <label class="top-form__label label" for="email">Введите e-mail</label>
                 </div>
-                <button class="top-form__btn">ПОЛУЧИТЬ</button>
+                <button class="top-form__btn" type="submit">ПОЛУЧИТЬ</button>
               </form>
             </div>
           </div>
@@ -176,28 +176,28 @@
                 <p class="selection__text">Мы предоставляем подборку тендеров по выбранной вами тематике бесплатно. Мы будем рады вам помочь!</p>
               </div>
               <div class="selection__descr"><span class="selection__call">Позвоните по телефону</span><a class="selection__phone" href="tel:+74955057984">+7 (495)<span>505-79-84</span></a><span class="selection__fill">Или заполните анкету</span>
-                <form class="selection__form" action="#">
+                <form class="selection__form form" action="#" data-validation="">
                   <div class="selection__group">
-                    <input class="selection__input" type="text" name="text" id="company">
-                    <label class="selection__label" for="company">Введите название компании</label>
+                    <input class="selection__input" type="text" name="text" id="company" data-name="text">
+                    <label class="selection__label label" for="company">Введите название компании</label>
                   </div>
                   <div class="selection__group">
-                    <input class="selection__input" type="text" name="num" id="inn">
-                    <label class="selection__label" for="inn">Введите ИНН</label>
+                    <input class="selection__input" type="text" name="num" id="inn" data-name="num">
+                    <label class="selection__label label" for="inn">Введите ИНН</label>
                   </div>
                   <div class="selection__group">
-                    <input class="selection__input" type="email" name="email" id="email2">
-                    <label class="selection__label" for="email2">Введите E-mail</label>
+                    <input class="selection__input" type="email" name="email" id="email2" data-name="email">
+                    <label class="selection__label label" for="email2">Введите E-mail</label>
                   </div>
                   <div class="selection__group">
-                    <input class="selection__input" type="phone" name="phone" id="phone">
-                    <label class="selection__label" for="phone">Введите номер телефона*</label>
+                    <input class="selection__input" type="phone" name="phone" id="phone" data-name="phone">
+                    <label class="selection__label label" for="phone">Введите номер телефона*</label>
                   </div>
                   <div class="selection__group">
-                    <input class="selection__input" type="text" name="text" id="theme">
-                    <label class="selection__label" for="theme">Тематика тендера</label>
+                    <input class="selection__input" type="text" name="text" id="theme" data-name="text">
+                    <label class="selection__label label" for="theme">Тематика тендера</label>
                   </div>
-                  <button class="selection__btn">Получить бесплатную подборку тендеров</button>
+                  <button class="selection__btn" type="submit">Получить бесплатную подборку тендеров</button>
                 </form>
               </div>
             </div>
@@ -335,16 +335,16 @@
                 </div>
                 <div class="preparation__form-wrap">
                   <h3 class="preparation__form-title">ЗАКАЗАТЬ ЗВОНОК</h3><span class="preparation__form-subtitle">И ОБЪЯСНИТЬ ЗАДАЧУ ПО ТЕЛЕФОНУ</span>
-                  <form class="preparation__form">
+                  <form class="preparation__form form" action="#" data-validation="">
                     <div class="preparation__group">
-                      <input class="preparation__input" type="text" name="name" id="name2">
-                      <label class="preparation__label" for="name2">Введите ваше имя</label>
+                      <input class="preparation__input" type="text" name="name" id="name2" data-name="name">
+                      <label class="preparation__label label" for="name2">Введите ваше имя</label>
                     </div>
                     <div class="preparation__group">
-                      <input class="preparation__input" type="phone" name="phone" id="phone2">
-                      <label class="preparation__label" for="phone2">Введите номер телефона*</label>
+                      <input class="preparation__input" type="phone" name="phone" id="phone2" data-name="phone">
+                      <label class="preparation__label label" for="phone2">Введите номер телефона*</label>
                     </div>
-                    <button class="preparation__btn">Отправить заявку</button>
+                    <button class="preparation__btn" type="submit">Отправить заявку</button>
                   </form>
                 </div>
               </div>
@@ -388,16 +388,16 @@
           </div>
         </section>
         <div class="remodal" data-remodal-id="reviews1">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/1.jpg" alt="Reviews 1">
+          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/1--big.jpg" alt="Reviews 1--big">
         </div>
         <div class="remodal" data-remodal-id="reviews2">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/2.jpg" alt="Reviews 2">
+          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/2--big.jpg" alt="Reviews 2--big">
         </div>
         <div class="remodal" data-remodal-id="reviews3">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/3.jpg" alt="Reviews 3">
+          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/3--big.jpg" alt="Reviews 3--big">
         </div>
         <div class="remodal" data-remodal-id="reviews4">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/4.jpg" alt="Reviews 4">
+          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/4--big.jpg" alt="Reviews 4--big">
         </div>
         <!-- / Reviews-->
         <!-- Consult-->
@@ -411,20 +411,20 @@
               </div>
               <div class="consult__descr"><span class="consult__pretitle">ОБРАТНАЯ СВЯЗЬ</span>
                 <h3 class="consult__title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h3>
-                <form class="consult__form" action="#">
+                <form class="consult__form form" action="#" data-validation="">
                   <div class="consult__group">
-                    <textarea class="consult__textarea" id="message" name="text"></textarea>
-                    <label class="consult__label" for="message">Опишите проблему</label>
+                    <textarea class="consult__textarea" id="message" name="text" data-name="text"></textarea>
+                    <label class="consult__label label" for="message">Опишите проблему</label>
                   </div>
                   <div class="consult__group">
-                    <input class="consult__input" type="text" name="name" id="name3">
-                    <label class="consult__label" for="name3">Укажите ваше имя*</label>
+                    <input class="consult__input" type="text" name="name" id="name3" data-name="name">
+                    <label class="consult__label label" for="name3">Укажите ваше имя*</label>
                   </div>
                   <div class="consult__group">
-                    <input class="consult__input" type="phone" name="phone" id="phone3">
-                    <label class="consult__label" for="phone3">Введите номер телефона*</label>
+                    <input class="consult__input" type="phone" name="phone" id="phone3" data-name="phone">
+                    <label class="consult__label label" for="phone3">Введите номер телефона*</label>
                   </div>
-                  <button class="consult__btn">ЗАДАТЬ ВОПРОС</button>
+                  <button class="consult__btn" type="submit">ЗАДАТЬ ВОПРОС</button>
                 </form>
               </div>
             </div>
@@ -433,6 +433,15 @@
         <!-- / Consult-->
         <!-- / Content-->
         <!-- Footer-->
+        <footer class="footer" id="contact">
+          <div class="footer__map map" id="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac717afee43cca189965502fe1135e7f49f5f6f5e3dbbd2dd3db2234ec0d458b&amp;amp;source=constructor" width="100%" height="662" frameborder="0"></iframe>
+          </div>
+          <div class="footer__info">
+            <div class="footer__contact"><a class="footer__phone" href="tel:+74955057984">+7 (495) 505-79-84</a><a class="footer__mail" href="mailto:tender@bpoconsult.ru">tender@bpoconsult.ru</a></div>
+            <div class="footer__address">Пресненская наб. д.12<span>ММДЦ «Москва-Сити»,<br>БЦ «Башня Федерация-Восток»</span></div>
+          </div>
+        </footer>
         <!-- / Footer-->
       </div>
       <script src="app/js/libs.min.js"></script>

@@ -2,9 +2,9 @@ section.top-form
 	.container
 		.top-form__wrap
 			h2.top-form__title= content.topForm.title
-			form.top-form__form(action="#")
+			form.top-form__form.form(data-validation='')
 				each form in content.topForm.form
 					.top-form__group
-						input.top-form__input(type= form["type"], name=form["name"], id=form["id"])
-						label.top-form__label(for=form["id"])= form["label"]
-				button.top-form__btn= content.topForm.btn
+						input.top-form__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])
+						label.top-form__label.label(for=form["id"])= form["label"]
+				button.top-form__btn(type="submit")= content.topForm.btn
