@@ -17,6 +17,8 @@
 	@media ({screen-md})
 		padding-left 60px
 		padding-right 25px
+	@media ({screen-sm})
+		padding 10px 0
 
 .header__logo
 	cursor pointer
@@ -65,13 +67,20 @@
 
 .header__burger
 	cursor pointer
-	display flex
+	display none
 	flex-direction column
 	align-items center
 	.icon
 		size(64px, 60px)
+	@media ({screen-md})
+		display flex
+	@media ({screen-sm})
+		.icon
+			size(34px, 30px)
 
 .header__mobile-menu
 	font-size 24px
 	font-weight 700
 	line-height 30px
+	@media ({screen-sm})
+		font-size 20px

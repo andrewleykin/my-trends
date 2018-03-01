@@ -1,5 +1,9 @@
 .services
 	margin-bottom 65px
+	@media ({screen-md})
+		margin-bottom 45px
+	@media ({screen-sm})
+		margin-bottom 30px
 
 .services__wrap
 	display flex
@@ -16,6 +20,8 @@
 	line-height 18px
 	@media ({screen-md})
 		max-width 190px
+	@media ({screen-sm})
+		max-width 45%
 
 .services__image
 	position relative
@@ -29,6 +35,8 @@
 		.services__order
 			opacity 1
 			visibility visible
+	@media ({screen-sm})
+		margin-bottom 15px
 
 .services__order
 	display flex
@@ -47,11 +55,20 @@
 .services__name
 	text-transform uppercase
 	font-weight 900
+	@media ({screen-md})
+		font-size 16px
+	@media ({screen-sm})
+		font-size 14px
 
 .srevices__cost
 	display block
 	color red-color
 	font-weight 900
+	@media ({screen-md})
+		font-size 18px
+		margin-top 5px
+	@media ({screen-sm})
+		font-size 16px
 
 .services__descr
 	max-width 570px

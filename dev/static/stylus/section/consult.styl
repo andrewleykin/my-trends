@@ -30,6 +30,9 @@
 		font-size 30px
 		line-height 34px
 		margin-bottom 10px
+	@media ({screen-sm})
+		font-size 28px
+		line-height 30px
 
 .consult__address
 	font-size 16px
@@ -42,6 +45,10 @@
 		font-size 30px
 		line-height 34px
 		margin-bottom 25px
+	@media ({screen-sm})
+		font-size 24px
+		line-height 26px
+		margin-bottom 15px
 
 .consult__phone
 	display block
@@ -50,17 +57,23 @@
 	margin-bottom 10px
 	&:hover
 		color darken(black-color, 20%)
+	@media ({screen-sm})
+		font-size 38px
 
 .consult__mail
 	font-size 33px
 	&:hover
 		color darken(black-color, 20%)
+	@media ({screen-sm})
+		font-size 28px
 
 .consult__info-mobile
 	margin-bottom 100px
 	display none
 	@media ({screen-md})
 		display block
+	@media ({screen-sm})
+		margin-bottom 30px
 
 .consult__descr
 	margin-left 10px
@@ -84,6 +97,13 @@
 		position absolute
 		bottom 0
 		left 0
+	@media ({screen-sm})
+		font-size 18px
+		line-height 20px
+		padding-bottom 10px
+		margin-bottom 10px
+		&:after
+			size(100px, 4px)
 
 .consult__title
 	font-weight 900
@@ -93,6 +113,10 @@
 	margin-bottom 35px
 	@media ({screen-md})
 		margin-bottom 25px
+	@media ({screen-sm})
+		font-size 34px
+		line-height 38px
+		margin-bottom 20px
 
 .consult__group
 	position relative
@@ -102,6 +126,9 @@
 	@media ({screen-md})
 		&+&
 			margin-top 40px
+	@media ({screen-sm})
+		&+&
+			margin-top 20px
 
 .consult__input,
 .consult__textarea
@@ -118,12 +145,19 @@
 	@media ({screen-md})
 		font-size 30px
 		height 90px
+	@media ({screen-sm})
+		font-size 14px
+		height 50px
+		padding-left 15px
 
 .consult__textarea
 	height 220px
 	padding-top 25px
 	@media ({screen-md})
 		height 330px
+	@media ({screen-sm})
+		height 120px
+		padding-top 20px
 
 .consult__label
 	position absolute
@@ -134,6 +168,10 @@
 	@extend .trs
 	@media ({screen-md})
 		font-size 30px
+	@media ({screen-sm})
+		font-size 16px
+		left 15px
+		top 18px
 
 .consult__btn
 	background blue-color
@@ -155,3 +193,6 @@
 	@media ({screen-md})
 		margin-top 50px
 		font-size 34px
+	@media ({screen-sm})
+		margin-top 20px
+		font-size 24px

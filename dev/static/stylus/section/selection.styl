@@ -6,6 +6,9 @@
 	@media ({screen-md})
 		padding 50px 0
 		margin-bottom 30px
+	@media ({screen-sm})
+		padding 30px 0
+		margin-bottom 20px
 
 .selection__wrap
 	display flex
@@ -24,6 +27,8 @@
 		margin-right 0
 		text-align left
 		margin-bottom 50px
+	@media ({screen-sm})
+		margin-bottom 20px
 
 .selection__pretitle
 	display inline-block
@@ -34,6 +39,12 @@
 	line-height 24px
 	font-weight 700
 	text-transform uppercase
+	@media ({screen-sm})
+		font-size 18px
+		line-height 18px
+		padding-bottom 10px
+		border-bottom-width 3px
+		margin-bottom 10px
 
 .selection__title
 	font-size 48px
@@ -45,6 +56,10 @@
 		margin-bottom 25px
 		max-width 170px
 		font-size 44px
+	@media ({screen-sm})
+		font-size 34px
+		line-height 34px
+		margin-bottom 20px
 
 .selection__subtitle
 	font-size 20px
@@ -56,6 +71,10 @@
 		line-height 34px
 		margin-bottom 35px
 		max-width 360px
+	@media ({screen-sm})
+		font-size 20px
+		line-height 22px
+		margin-bottom 10px
 
 .selection__text
 	max-width 310px
@@ -67,6 +86,10 @@
 		margin-left 0
 		font-size 24px
 		line-height 26px
+	@media ({screen-sm})
+		font-size 18px
+		line-height 20px
+		max-width 100%
 
 .selection__descr
 	margin-left 25px
@@ -106,6 +129,9 @@
 	@media ({screen-md})
 		&+&
 			margin-top 55px
+	@media ({screen-sm})
+		&+&
+			margin-top 20px
 
 .selection__input
 	height 70px
@@ -113,6 +139,7 @@
 	width 100%
 	border 1px solid #9da7ad
 	border-radius 5px
+	font-size 14px
 	@extend .trs
 	&:focus
 		border-color blue-color
@@ -120,6 +147,11 @@
 			opacity 0
 	@media ({screen-md})
 		height 90px
+		font-size 30px
+	@media ({screen-sm})
+		height 50px
+		font-size 18px
+		padding-left 20px
 
 .selection__label
 	position absolute
@@ -131,6 +163,10 @@
 	@media ({screen-md})
 		font-size 30px
 		top 32px
+	@media ({screen-sm})
+		font-size 18px
+		top 18px
+		left 20px
 
 .selection__btn
 	background blue-color
@@ -153,3 +189,8 @@
 		line-height 46px
 		margin-top 55px
 		padding 30px 0
+	@media ({screen-sm})
+		font-size 20px
+		line-height 22px
+		margin-top 25px
+		padding 15px 0

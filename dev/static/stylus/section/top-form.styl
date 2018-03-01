@@ -1,5 +1,7 @@
 .top-form
 	margin-bottom 90px
+	@media ({screen-sm})
+		margin-bottom 50px
 
 .top-form__wrap
 	background purple-color
@@ -8,6 +10,8 @@
 	padding 40px 20px 38px
 	@media ({screen-xl})
 		display block
+	@media ({screen-sm})
+		padding 30px 20px 25px
 
 .top-form__title
 	text-align right
@@ -26,6 +30,10 @@
 		max-width 100%
 	@media ({screen-md})
 		margin-bottom 70px
+	@media ({screen-sm})
+		font-size 24px
+		line-height 28px
+		margin-bottom 40px
 
 .top-form__form
 	display flex
@@ -44,6 +52,9 @@
 		&+&
 			margin-left 0
 			margin-top 55px
+	@media ({screen-sm})
+		&+&
+			margin-top 20px
 
 .top-form__input
 	padding-left 14px
@@ -61,6 +72,9 @@
 	@media ({screen-md})
 		height 86px
 		font-size 30px
+	@media ({screen-sm})
+		height 50px
+		font-size 24px
 
 .top-form__label
 	color #6a6a6a
@@ -72,6 +86,9 @@
 	@media ({screen-md})
 		font-size 30px
 		top 32px
+	@media ({screen-sm})
+		font-size 24px
+		top 15px
 
 .top-form__btn
 	display block
@@ -97,4 +114,8 @@
 		padding 30px 40px
 		&:hover,&:focus
 			border-color red-color
-			background darken(red-color, 20%) 
+			background darken(red-color, 20%)
+	@media ({screen-sm})
+		margin-top 20px
+		font-size 22px
+		padding 15px 20px

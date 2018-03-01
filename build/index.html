@@ -33,7 +33,7 @@
                 </svg><a href="mailto:tender@bpoconsult.ru">tender@bpoconsult.ru</a>
               </div>
               <div class="header__info"><a class="header__phone" href="tel:+74955057984">+7 (495)<span>505-79-84</span></a><span class="header__graphic">c 9:00 до 19:00 ежедневно</span></div>
-              <div class="header__burger">
+              <div class="header__burger" data-remodal-target="mobile">
                 <svg class="icon icon-burger ">
                   <use xlink:href="app/img/svg/symbol/sprite.svg#burger"></use>
                 </svg><span class="header__mobile-menu">меню</span>
@@ -43,6 +43,22 @@
         </header>
         <!-- / Header-->
         <!-- Content-->
+        <div class="remodal mobile" data-remodal-id="mobile">
+          <div class="mobile__header">
+            <div class="mobile__logo"><img src="app/img/general/logo--mobile.png" alt="ООО “МОИ ТЕНДЕРЫ”"></div>
+            <div class="mobile__contact"><a class="mobile__phone" href="tel:+74955057984">+7 (495) 505-79-84</a>
+              <p class="mobile__address"><span>123610, Москва</span><span>Пресненская наб. д.12</span><span>ММДЦ «Москва-Сити»</span><span>БЦ «Башня Федерация-Восток»</span>
+              </p>
+            </div>
+          </div>
+          <div class="mobile__info">
+            <h2 class="mobile__title">КОМПЛЕКСНОЕ<span class="purple">ТЕНДЕРНОЕ СОПРОВОЖДЕНИЕ</span></h2>
+            <p class="mobile__subtitle">Тендерная и юридическая помощь в подготовке и участии в тендерах.</p>
+          </div>
+          <div class="mobile__content"><a class="mobile__btn js-scroll" href="#selection">ЗАКАЗАТЬ БЕСПЛАТНУЮ<span>ПОДБОРКУ ТЕНДЕРОВ</span></a><a class="mobile__btn js-scroll" href="#top-form">ЗАКАЗАТЬ<span>ПРАЙС-ЛИСТ</span></a><a class="mobile__btn js-scroll" href="#consult">ЗАКАЗАТЬ<span>ОБРАТНЫЙ ЗВОНОК</span></a><a class="mobile__btn" href="tel:+74955057984">Позвонить</a>
+            <button class="mobile__link" type="button" data-remodal-action="close">ПЕРЕЙТИ НА САЙТ</button>
+          </div>
+        </div>
         <!-- Top-banner-->
         <section class="top-banner" id="top-banner">
           <div class="container">
@@ -76,7 +92,7 @@
         </section>
         <!-- / Top-banner-->
         <!-- Top-form-->
-        <section class="top-form">
+        <section class="top-form" id="top-form">
           <div class="container">
             <div class="top-form__wrap">
               <h2 class="top-form__title">ОТПРАВЬТЕ ЗАЯВКУ, ЧТОБЫ ПОЛУЧИТЬ ПОЛНЫЙ ПРАЙС-ЛИСТ</h2>
@@ -419,7 +435,7 @@
         </div>
         <!-- / Reviews-->
         <!-- Consult-->
-        <section class="consult">
+        <section class="consult" id="consult">
           <div class="container">
             <div class="consult__wrap">
               <div class="consult__info">

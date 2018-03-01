@@ -1,5 +1,9 @@
 .reviews
 	margin-bottom 90px
+	@media ({screen-md})
+		margin-bottom 50px
+	@media ({screen-sm})
+		margin-bottom 30px
 
 .reviews__title
 	text-align center
@@ -9,6 +13,12 @@
 	margin-bottom 75px
 	span
 		display block
+	@media ({screen-md})
+		margin-bottom 60px
+	@media ({screen-sm})
+		font-size 40px
+		line-height 42px
+		margin-bottom 40px
 
 .reviews__list
 	display flex
@@ -35,6 +45,9 @@
 	cursor pointer
 	@media ({screen-md})
 		margin-bottom 15px
+	@media ({screen-sm})
+		max-width 80%
+		margin 0 auto 15px
 
 .reviews__text
 	font-size 18px

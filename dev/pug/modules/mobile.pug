@@ -1,0 +1,19 @@
+.remodal(data-remodal-id="mobile").mobile
+	.mobile__header
+		.mobile__logo
+			img(src="app/img/general/"+content.mobile.logo, alt=content.general.name)
+		.mobile__contact
+			a.mobile__phone(href=content.general.phone.link)= content.general.phone.textFull
+			p.mobile__address
+				each val in content.mobile.address
+					span= val["text"]
+	.mobile__info
+		h2.mobile__title= content.topBanner.title.start
+			span.purple= content.topBanner.title.end
+		p.mobile__subtitle= content.mobile.subtitle
+	.mobile__content
+		each btn in content.mobile.btn
+			a.mobile__btn.js-scroll(href=btn["link"])= btn["textStart"]
+				span= btn["textEnd"]
+		a.mobile__btn(href=content.general.phone.link)= content.mobile.phone
+		button.mobile__link(type="button" data-remodal-action="close")= content.mobile.link

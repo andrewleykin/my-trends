@@ -8,12 +8,15 @@
 	font-size 0
 	left 85%
 	top 25px
-	width 40px
-	height 40px
+	size(40px)
 	z-index 2
 	background url("../img/general/close.png") center no-repeat
+	background-size cover
 	&:before
 		display none
+	@media ({screen-sm})
+		size(25px)
+		left 83%
 
 .order__subtitle
 	display block
@@ -33,6 +36,12 @@
 		left 0
 		size(155px, 8px)
 		background red-color
+	@media ({screen-sm})
+		font-size 20px
+		line-height 22px
+		padding-bottom 10px
+		&:after
+			size(100px, 4px)
 
 .order__title
 	font-size 48px
@@ -41,6 +50,11 @@
 	text-transform uppercase
 	margin-bottom 45px
 	color blue-color
+	@media ({screen-sm})
+		font-size 34px
+		line-height 36px
+		margin-bottom 20px
+		max-width 220px
 
 .order__group
 	position relative
@@ -61,6 +75,10 @@
 		border-color blue-color
 		&+.order__label
 			opacity 0
+	@media ({screen-sm})
+		height 50px
+		padding-left 15px
+		font-size 16px
 
 .order__label
 	color #6a6a6a
@@ -69,6 +87,10 @@
 	left 30px
 	top 25px
 	@extend .trs
+	@media ({screen-sm})
+		left 15px
+		font-size 16px
+		top 18px
 
 .order__btn
 	background blue-color
@@ -86,4 +108,9 @@
 	margin-top 30px
 	@extend .trs
 	&:hover,&:focus
-		background darken(blue-color, 20%) 
+		background darken(blue-color, 20%)
+	@media ({screen-sm})
+		margin-top 20px
+		font-size 20px
+		line-height 20px
+		padding 18px 0

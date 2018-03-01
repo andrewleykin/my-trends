@@ -1,0 +1,133 @@
+.mobile
+	width 100%
+	max-width 100%
+	z-index 10
+	background #FFF
+	padding 0
+	padding-top 40px
+	margin-bottom 0
+	@media ({screen-sm})
+		padding-top 20px
+
+
+.mobile__header
+	display flex
+	justify-content space-between
+	margin-bottom 55px
+	padding 0 20px
+	@media ({screen-sm})
+		display block
+		margin-bottom 20px
+
+.mobile__logo
+	@media ({screen-sm})
+		max-width 50%
+		margin 0 auto 15px
+		img
+			width 100%
+
+.mobile__contact
+	width 100%
+	max-width 65%
+	@media ({screen-sm})
+		max-width 100%
+
+.mobile__phone
+	display block
+	font-weight 500
+	font-size 36px
+	line-height 36px
+	margin-bottom 25px
+	text-align right
+	&:hover
+		color darken(black-color, 20%)
+	@media ({screen-sm})
+		font-size 24px
+		text-align center
+		margin-bottom 10px
+
+.mobile__address
+	text-align right
+	font-size 24px
+	line-height 28px
+	span
+		display block
+	@media ({screen-sm})
+		text-align center
+		font-size 18px
+		line-height 22px
+
+.mobile__info
+	background gray-color
+	padding 20px 0 30px
+
+.mobile__title
+	font-size 50px
+	font-weight 900
+	text-transform uppercase
+	max-width 470px
+	padding 0 20px
+	margin 0 auto 15px
+	text-align left
+	span
+		display block
+	@media ({screen-sm})
+		font-size 34px
+
+.mobile__subtitle
+	display block
+	max-width 470px
+	padding 0 20px
+	margin 0 auto
+	font-size 34px
+	line-height 36px
+	text-align left
+	@media ({screen-sm})
+		font-size 18px
+		line-height 22px
+
+.mobile__content
+	padding 45px 20px
+	@media ({screen-sm})
+		padding 20px
+
+.mobile__btn
+	flex-center()
+	flex-direction column
+	font-weight 500
+	font-size 30px
+	line-height 30px
+	color white
+	text-transform uppercase
+	background purple-color
+	width 100%
+	max-width 470px
+	margin 0 auto
+	height 90px
+	@extend .trs
+	&+&
+		margin-top 30px 
+	&:hover,&:focus
+		background darken(purple-color, 20%) 
+	span
+		display block
+	@media ({screen-sm})
+		font-size 22px
+		line-height 24px
+		height 70px
+
+.mobile__link
+	display block
+	margin 50px auto 0
+	text-transform uppercase
+	font-size 30px
+	line-height 30px
+	text-decoration underline
+	color purple-color
+	background none
+	cursor pointer
+	&:hover
+		text-decoration none
+	@media ({screen-sm})
+		margin-top 20px
+		font-size 18px

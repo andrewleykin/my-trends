@@ -1,5 +1,7 @@
 .advantage
 	margin-bottom 50px
+	@media ({screen-sm})
+		margin-bottom 30px
 
 .advantage__wrap
 	display flex
@@ -14,6 +16,8 @@
 		width 100%
 		max-width 49%
 		margin-bottom 65px
+	@media ({screen-sm})
+		margin-bottom 40px
 
 .advantage__icon
 	height 128px
@@ -21,6 +25,10 @@
 	flex-center()
 	@media ({screen-lg})
 		margin-bottom 25px
+	@media ({screen-sm})
+		max-width 70%
+		margin 0 auto 15px
+		height 90px
 
 .advantage__text
 	font-size 18px
@@ -37,4 +45,7 @@
 	@media ({screen-md})
 		font-size 24px
 		line-height 26px
-		font-weight 400 
+		font-weight 400
+	@media ({screen-sm})
+		font-size 18px
+		line-height 20px

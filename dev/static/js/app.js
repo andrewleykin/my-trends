@@ -34,14 +34,18 @@
 
 // функция скролла
 (function(){
-	$('.menu__link, .header__logo').click(function(e) {
+	$('.menu__link, .header__logo, .js-scroll').click(function(e) {
 		e.preventDefault();
-		var direction = $(this).attr('href');
+		var direction = $(this).attr('href'),
 			reqArticle = $('section, footer').filter(direction),
-			reqArticlePos = reqArticle.offset().top - 100;
+			reqArticlePos = reqArticle.offset().top - 100,
+			menu = $('[data-remodal-id=mobile]').remodal();
+
+		menu.close();
 
 		$('body, html').animate({scrollTop: reqArticlePos}, 500);
 	});
+
 })();
 
 // функция валидации формы
@@ -161,5 +165,13 @@
 	            block.removeClass('valid').addClass('invalid');
 	        }
 	    } 
+	}
+})();
+
+// функция мобильного меню
+(function(){
+	if($(window).width() < 768) {
+		var menu =  $('[data-remodal-id=mobile]').remodal();
+		menu.open()
 	}
 })();

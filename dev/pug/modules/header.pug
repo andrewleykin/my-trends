@@ -12,6 +12,6 @@ header.header
 				a.header__phone(href=content.general.phone.link)= content.general.phone.text.start
 					span= content.general.phone.text.end
 				span.header__graphic= content.general.graphic
-			.header__burger
+			.header__burger(data-remodal-target="mobile")
 				+icon(content.header.burger)
 				span.header__mobile-menu= content.header.menu
