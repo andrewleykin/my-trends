@@ -8,6 +8,9 @@
 	display flex
 	align-items center
 	padding 40px 20px 38px
+	@media ({screen-lg})
+		min-width calc( 100% + 20px )
+		margin-left -10px
 	@media ({screen-xl})
 		display block
 	@media ({screen-sm})
@@ -34,6 +37,8 @@
 		font-size 24px
 		line-height 28px
 		margin-bottom 40px
+		max-width 247px
+		margin-left auto
 
 .top-form__form
 	display flex
