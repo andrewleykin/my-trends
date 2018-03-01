@@ -8,7 +8,8 @@
 	margin-bottom 0
 	@media ({screen-sm})
 		padding-top 20px
-
+		vertical-align top
+		min-height 100%
 
 .mobile__header
 	display flex
@@ -16,13 +17,11 @@
 	margin-bottom 55px
 	padding 0 20px
 	@media ({screen-sm})
-		display block
 		margin-bottom 20px
 
 .mobile__logo
 	@media ({screen-sm})
-		max-width 50%
-		margin 0 auto 15px
+		max-width 40%
 		img
 			width 100%
 
@@ -42,8 +41,7 @@
 	&:hover
 		color darken(black-color, 20%)
 	@media ({screen-sm})
-		font-size 24px
-		text-align center
+		font-size 18px
 		margin-bottom 10px
 
 .mobile__address
@@ -53,43 +51,50 @@
 	span
 		display block
 	@media ({screen-sm})
-		text-align center
-		font-size 18px
-		line-height 22px
+		font-size 14px
+		line-height 16px
 
 .mobile__info
 	background gray-color
 	padding 20px 0 30px
+	@media ({screen-sm})
+		padding 15px 0 10px
+
+.mobile__wrap
+	padding 0 20px
 
 .mobile__title
 	font-size 50px
 	font-weight 900
 	text-transform uppercase
 	max-width 470px
-	padding 0 20px
 	margin 0 auto 15px
 	text-align left
 	span
 		display block
 	@media ({screen-sm})
-		font-size 34px
+		font-size 24px
+		margin-bottom 10px
+		max-width 215px
+		margin-left 0
 
 .mobile__subtitle
 	display block
 	max-width 470px
-	padding 0 20px
 	margin 0 auto
 	font-size 34px
 	line-height 36px
 	text-align left
 	@media ({screen-sm})
-		font-size 18px
-		line-height 22px
+		font-size 14px
+		line-height 18px
+		max-width 215px
+		margin-left 0
 
 .mobile__content
 	padding 45px 20px
 	@media ({screen-sm})
-		padding 20px
+		padding 15px
 
 .mobile__btn
 	flex-center()
@@ -112,9 +117,11 @@
 	span
 		display block
 	@media ({screen-sm})
-		font-size 22px
-		line-height 24px
-		height 70px
+		&+&
+			margin-top 15px
+		font-size 16px
+		line-height 18px
+		height 50px
 
 .mobile__link
 	display block

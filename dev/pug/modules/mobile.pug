@@ -8,9 +8,10 @@
 				each val in content.mobile.address
 					span= val["text"]
 	.mobile__info
-		h2.mobile__title= content.topBanner.title.start
-			span.purple= content.topBanner.title.end
-		p.mobile__subtitle= content.mobile.subtitle
+		.mobile__wrap
+			h2.mobile__title= content.topBanner.title.start
+				span.purple= content.topBanner.title.end
+			p.mobile__subtitle= content.mobile.subtitle
 	.mobile__content
 		each btn in content.mobile.btn
 			a.mobile__btn.js-scroll(href=btn["link"])= btn["textStart"]
