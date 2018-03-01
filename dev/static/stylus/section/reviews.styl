@@ -13,6 +13,8 @@
 .reviews__list
 	display flex
 	justify-content space-between
+	@media ({screen-md})
+		flex-wrap wrap
 
 .reviews__item
 	max-width 195px
@@ -20,10 +22,22 @@
 	&:nth-child(2),
 	&:nth-child(3)
 		max-width 245px
+	@media ({screen-md})
+		width 100%
+		max-width 50%
+		margin-bottom 20px
+		&:nth-child(2),
+		&:nth-child(3)
+			max-width 50%
 
 .reviews__image
 	margin-bottom 30px
 	cursor pointer
+	@media ({screen-md})
+		margin-bottom 15px
+
+.reviews__text
+	font-size 18px
 
 .reviews__popup
 	padding 0

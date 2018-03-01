@@ -4,14 +4,23 @@
 .advantage__wrap
 	display flex
 	justify-content space-around
+	@media ({screen-lg})
+		justify-content space-between
+		flex-wrap wrap
 
 .advantage__item
 	max-width 222px
+	@media ({screen-lg})
+		width 100%
+		max-width 49%
+		margin-bottom 65px
 
 .advantage__icon
 	height 128px
 	margin-bottom 60px
 	flex-center()
+	@media ({screen-lg})
+		margin-bottom 25px
 
 .advantage__text
 	font-size 18px
@@ -22,3 +31,10 @@
 		display block
 	span.nowrap
 		display inline-block
+	@media ({screen-lg})
+		max-width 280px
+		margin 0 auto
+	@media ({screen-md})
+		font-size 24px
+		line-height 26px
+		font-weight 400 

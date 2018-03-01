@@ -1,6 +1,8 @@
 .top-banner
 	padding-top 130px
 	margin-bottom 40px
+	@media ({screen-md})
+		padding-top 110px
 
 .top-banner__wrap
 	max-width 1090px
@@ -10,10 +12,24 @@
 	display flex
 	padding-left 43px
 	margin-bottom 105px
+	@media ({screen-lg})
+		padding-left 0
+	@media ({screen-xl})
+		margin-bottom 50px
+	@media ({screen-md})
+		background gray-color
+		padding 40px 0 35px 10px
+		width calc(100% + 20px)
+		margin-left -10px
+		margin-bottom 40px 
 
 .top-banner__logo
 	margin-right 122px
 	flex none
+	@media ({screen-lg})
+		margin-right 50px
+	@media ({screen-md})
+		display none
 
 .top-banner__title
 	font-size 64px
@@ -21,10 +37,17 @@
 	font-weight 900
 	span
 		display block
+	@media ({screen-md})
+		font-size 58px
 
 .top-banner__list
 	display flex
 	justify-content space-between
+	@media ({screen-md})
+		flex-direction column
+		align-items center
+		max-width 520px
+		margin 0 auto 
 
 .top-banner__item
 	max-width 344px
@@ -34,6 +57,15 @@
 		max-width 290px
 		.top-banner__name
 			margin-bottom 22px
+	@media ({screen-lg})
+		max-width 270px
+	@media ({screen-md})
+		max-width 100%
+		&+&
+			margin-top 60px
+		&:nth-child(1),
+		&:nth-child(2)
+			max-width  100%
 
 .top-banner__name
 	font-size 24px
@@ -41,10 +73,18 @@
 	font-weight 900
 	text-transform uppercase
 	margin-bottom 15px
+	@media ({screen-md})
+		font-size 34px
+		line-height 34px
 
 .top-banner__text
 	line-height 18px
 	margin-bottom 10px
+	@media ({screen-xl})
+		font-size 16px
+	@media ({screen-md})
+		font-size 30px
+		line-height 30px
 
 .top-banner__cost
 	font-weight 900
@@ -61,6 +101,14 @@
 		font-size 24px
 		align-self flex-start
 		margin-left 2px
+	@media ({screen-md})
+		font-size 24px
+		span
+			font-size 30px
 
 .top-banner__btn
 	max-width 190px
+	@media ({screen-md})
+		max-width 290px
+		margin 0 auto
+		text-align center

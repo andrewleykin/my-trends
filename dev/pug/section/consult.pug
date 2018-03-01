@@ -9,6 +9,11 @@ section.consult
 			.consult__descr
 				span.consult__pretitle= content.consult.pretitle
 				h3.consult__title= content.consult.title
+				.consult__info-mobile
+					h1.consult__name= content.general.name
+					p.consult__address= content.consult.address
+					a.consult__phone(href=content.general.phone.link)= content.general.phone.textFull
+					a.consult__mail(href=content.general.mail.link)= content.general.mail.text
 				form.consult__form.form(action="#", data-validation='')
 					.consult__group
 						textarea.consult__textarea(id=content.consult.textarea.id name=content.consult.textarea.name , data-name=content.consult.textarea.name)

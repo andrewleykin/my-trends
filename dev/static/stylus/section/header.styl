@@ -12,12 +12,23 @@
 	display flex
 	justify-content space-between
 	align-items center
+	@media ({screen-lg})
+		padding-left 0
+	@media ({screen-md})
+		padding-left 60px
+		padding-right 25px
 
 .header__logo
 	cursor pointer
 
 .header__menu
 	margin-left 100px
+	@media ({screen-lg})
+		margin-left 40px
+	@media ({screen-xl})
+		margin-left 20px
+	@media ({screen-md})
+		display none
 
 .header__mail
 	margin-left auto
@@ -25,6 +36,18 @@
 	.icon
 		size(14px,10px)
 		margin-right 10px
+		@media ({screen-md})
+			margin-right 5px
+	@media ({screen-xl})
+		margin-right 20px
+		a
+			font-size 16px
+	@media ({screen-md})
+		display none
+
+.header__info
+	@media ({screen-md})
+		display none
 
 .header__phone
 	display flex
@@ -39,3 +62,16 @@
 
 .header__graphic
 	font-size 15px
+
+.header__burger
+	cursor pointer
+	display flex
+	flex-direction column
+	align-items center
+	.icon
+		size(64px, 60px)
+
+.header__mobile-menu
+	font-size 24px
+	font-weight 700
+	line-height 30px

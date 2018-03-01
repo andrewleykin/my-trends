@@ -1,6 +1,8 @@
 .client
 	padding-top 68px
 	margin-bottom 65px
+	@media ({screen-md})
+		padding-top 0
 
 .client__title
 	text-align center
@@ -15,6 +17,8 @@
 	display flex
 	flex-wrap wrap
 	align-items center
+	@media ({screen-lg})
+		justify-content space-around
 
 .client__item
 	margin-right 20px
@@ -22,3 +26,7 @@
 	max-width 140px
 	img
 		width 100%
+	@media ({screen-md})
+		max-width 125px
+		margin-bottom 15px
+		margin-right 10px

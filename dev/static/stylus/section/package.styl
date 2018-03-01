@@ -1,5 +1,7 @@
 .package
 	margin-bottom 60px
+	@media ({screen-md})
+		display none
 
 .package__title
 	display flex
@@ -19,6 +21,8 @@
 	display flex
 	justify-content space-between
 	padding-left 30px
+	@media ({screen-xl})
+		padding-left 0
 
 .package__item
 	max-width 340px
@@ -28,6 +32,8 @@
 			background red-color
 			&:hover
 				background darken(red-color, 20%)
+	@media ({screen-xl})
+		max-width 33%
 
 .package__subname
 	display inline-block

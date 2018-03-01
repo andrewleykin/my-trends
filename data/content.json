@@ -24,6 +24,10 @@
   	},
   	"graphic": "c 9:00 до 19:00 ежедневно"
   },
+  "header": {
+    "burger": "burger",
+    "menu": "меню"
+  },
   "topBanner": {
   	"title": {
   		"start": "КОМПЛЕКСНОЕ",

@@ -6,6 +6,8 @@
 	display flex
 	align-items center
 	padding 40px 20px 38px
+	@media ({screen-xl})
+		display block
 
 .top-form__title
 	text-align right
@@ -16,10 +18,20 @@
 	color white
 	font-size 20px
 	line-height 20px
+	@media ({screen-xl})
+		margin-right 0
+		margin-bottom 40px
+		font-size 44px
+		line-height 44px
+		max-width 100%
+	@media ({screen-md})
+		margin-bottom 70px
 
 .top-form__form
 	display flex
 	width 100%
+	@media ({screen-md})
+		display block
 
 .top-form__group
 	position relative
@@ -27,6 +39,11 @@
 	max-width 300px
 	&+&
 		margin-left 20px
+	@media ({screen-md})
+		max-width 700px
+		&+&
+			margin-left 0
+			margin-top 55px
 
 .top-form__input
 	padding-left 14px
@@ -41,6 +58,9 @@
 		border-color blue-color
 		&+.top-form__label
 			opacity 0
+	@media ({screen-md})
+		height 86px
+		font-size 30px
 
 .top-form__label
 	color #6a6a6a
@@ -49,6 +69,9 @@
 	left 14px
 	top 14px
 	@extend .trs
+	@media ({screen-md})
+		font-size 30px
+		top 32px
 
 .top-form__btn
 	display block
@@ -64,3 +87,14 @@
 	@extend .trs
 	&:hover,&:focus
 		border-color blue-color
+	@media ({screen-md})
+		margin-left auto
+		margin-top 50px
+		background red-color
+		border none
+		color white
+		font-size 34px
+		padding 30px 40px
+		&:hover,&:focus
+			border-color red-color
+			background darken(red-color, 20%) 

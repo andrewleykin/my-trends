@@ -3,6 +3,8 @@
 	padding-bottom 85px
 	background blue-color
 	color white
+	@media ({screen-md})
+		display none
 
 .preparation__title
 	display flex
@@ -33,6 +35,8 @@
 		padding 0px 20px
 		background yellow-color
 		display block
+	@media ({screen-lg})
+		margin-bottom 70px
 
 .preparation__content
 	position relative
@@ -46,6 +50,9 @@
 	padding-right 66px
 	padding-left 29px
 	padding-top 22px
+	@media ({screen-lg})
+		background none
+		padding 0 
 
 .preparation__item
 	width 100%
@@ -70,10 +77,31 @@
 			padding-left 85px
 		}
 	}
+	@media ({screen-lg})
+		max-width 32%
+		order 1
+		&:nth-child(6)
+			order 2
+		&:nth-child(5)
+			order 3
+		&:nth-child(4)
+			order 4
+		&:nth-child(7),
+		&:nth-child(8),
+		&:nth-child(9)
+			order 5
+		&:nth-child(11)
+			order 6
+		&:nth-child(10)
+			order 7
+			margin-right auto
+			margin-left 30px 
 
 .preparation__head
 	display flex
 	margin-bottom 30px
+	@media ({screen-lg})
+		margin-bottom 15px
 
 .preparation__num
 	display block
@@ -93,6 +121,8 @@
 	font-size 14px
 	line-height 16px
 	padding-left 50px
+	@media ({screen-lg})
+		font-size 16px
 
 .preparation__form-wrap
 	position absolute
@@ -102,10 +132,9 @@
 	background white
 	top -112px
 	right 0
-	// &.fixed
-	// 	top 200px
-	// 	position fixed
-	// 	right 13%
+	@media ({screen-lg})
+		display none
+
 
 .preparation__form-title
 	font-size 38px

@@ -5,6 +5,8 @@
 	display flex
 	flex-wrap wrap
 	justify-content space-between
+	@media ({screen-lg})
+		justify-content space-around
 
 .services__item
 	max-width 270px
@@ -12,6 +14,8 @@
 	text-align center
 	font-size 14px
 	line-height 18px
+	@media ({screen-md})
+		max-width 190px
 
 .services__image
 	position relative
@@ -54,6 +58,8 @@
 	color dark-color
 	position relative
 	width 100%
+	@media ({screen-lg})
+		display none
 
 .services__el
 	position absolute

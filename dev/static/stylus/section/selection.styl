@@ -3,15 +3,27 @@
 	background gray-color
 	color dark-color
 	margin-bottom 65px
+	@media ({screen-md})
+		padding 50px 0
+		margin-bottom 30px
 
 .selection__wrap
 	display flex
 	justify-content center
+	@media ({screen-md})
+		display block
+		max-width 430px
+		margin 0 auto
 
 .selection__info
 	text-align right
 	max-width 325px
 	margin-right 25px
+	@media ({screen-md})
+		max-width 100%
+		margin-right 0
+		text-align left
+		margin-bottom 50px
 
 .selection__pretitle
 	display inline-block
@@ -29,21 +41,37 @@
 	font-weight 900
 	color blue-color
 	margin-bottom 40px
+	@media ({screen-md})
+		margin-bottom 25px
+		max-width 170px
+		font-size 44px
 
 .selection__subtitle
 	font-size 20px
 	line-height 32px
 	font-weight 700
 	margin-bottom 25px
+	@media ({screen-md})
+		font-size 30px
+		line-height 34px
+		margin-bottom 35px
+		max-width 360px
 
 .selection__text
 	max-width 310px
 	margin-left auto
 	font-size 16px
 	line-height 18px
+	@media ({screen-md})
+		max-width 340px
+		margin-left 0
+		font-size 24px
+		line-height 26px
 
 .selection__descr
 	margin-left 25px
+	@media ({screen-md})
+		margin-left 0
 
 .selection__call,
 .selection__fill
@@ -51,6 +79,8 @@
 	font-size 16px
 	line-height 18px
 	margin-bottom 15px
+	@media ({screen-md})
+		display none
 
 .selection__phone
 	display block
@@ -62,6 +92,8 @@
 		font-size 55px
 		display inline-block
 		margin-left 10px
+	@media ({screen-md})
+		display none
 
 .selection__form
 	max-width 430px
@@ -71,6 +103,9 @@
 	width 100%
 	&+&
 		margin-top 10px
+	@media ({screen-md})
+		&+&
+			margin-top 55px
 
 .selection__input
 	height 70px
@@ -83,6 +118,8 @@
 		border-color blue-color
 		&+.selection__label
 			opacity 0
+	@media ({screen-md})
+		height 90px
 
 .selection__label
 	position absolute
@@ -91,6 +128,9 @@
 	color #6a6a6a
 	font-size 14px
 	@extend .trs
+	@media ({screen-md})
+		font-size 30px
+		top 32px
 
 .selection__btn
 	background blue-color
@@ -107,4 +147,9 @@
 	margin-top 10px
 	@extend .trs
 	&:hover,&:focus
-		background darken(blue-color, 20%) 
+		background darken(blue-color, 20%)
+	@media ({screen-md})
+		font-size 34px
+		line-height 46px
+		margin-top 55px
+		padding 30px 0
