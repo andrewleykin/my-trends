@@ -22,9 +22,12 @@
 		flex-shrink 1
 		flex-basis 50%
 		max-width 50%
-		&:last-child
+		&:nth-child(3)
 			.advantage__icon
 				max-width 50%
+		&:last-child
+			.advantage__icon
+				max-width 30%
 
 .advantage__icon
 	height 128px
@@ -33,9 +36,9 @@
 	@media ({screen-lg})
 		margin-bottom 25px
 	@media ({screen-sm})
-		max-width 70%
+		max-width 40%
 		margin 0 auto 15px
-		height 110px
+		height 90px
 
 .advantage__text
 	font-size 18px
@@ -54,5 +57,5 @@
 		line-height 26px
 		font-weight 400
 	@media ({screen-sm})
-		font-size 14px
-		line-height 18px
+		font-size 16px
+		line-height 20px

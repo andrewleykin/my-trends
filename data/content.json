@@ -91,7 +91,8 @@
         "type": "email"
       }
     ],
-    "btn": "ПОЛУЧИТЬ"
+    "btn": "ПОЛУЧИТЬ",
+    "formAction": "app/mail/sendpricelist.php"
   },
   "advantage": {
     "list": [
@@ -197,37 +198,46 @@
     "text": "Мы предоставляем подборку тендеров по выбранной вами тематике бесплатно. Мы будем рады вам помочь!",
     "call": "Позвоните по телефону",
     "fill": "Или заполните анкету",
-    "btn": "Получить бесплатную подборку тендеров",
+    "btn": {
+      "start": "Получить бесплатную",
+      "end": "подборку тендеров"
+    },
+    "formAction": "app/mail/sendselection.php",
     "form": [
       {
         "name": "text",
         "id": "company",
         "label": "Введите название компании",
-        "type": "text"
+        "type": "text",
+        "data": "text"
       },
       {
         "name": "num",
         "id": "inn",
         "label": "Введите ИНН",
-        "type": "text"
+        "type": "text",
+        "data": "num"
       },
       {
         "name": "email",
         "id": "email2",
         "label": "Введите E-mail",
-        "type": "email"
+        "type": "email",
+        "data": "email"
       },
       {
         "name": "phone",
         "id": "phone",
         "label": "Введите номер телефона*",
-        "type": "phone"
+        "type": "phone",
+        "data": "phone"
       },
       {
-        "name": "text",
+        "name": "text2",
         "id": "theme",
         "label": "Тематика тендера",
-        "type": "text"
+        "type": "text",
+        "data": "text"
       }
     ]
   },
@@ -349,6 +359,7 @@
         "type": "phone"
       }
     ],
+    "formAction": "app/mail/sendphone.php",
     "formTitle": "ЗАКАЗАТЬ ЗВОНОК",
     "formSubtitle": "И ОБЪЯСНИТЬ ЗАДАЧУ ПО ТЕЛЕФОНУ"
   },
@@ -467,6 +478,7 @@
         "type": "phone"
       }
     ],
+    "formAction": "app/mail/sendconsult.php",
     "btn": "ЗАДАТЬ ВОПРОС"
   },
   "footer": {
@@ -478,6 +490,12 @@
     "subtitle": "ФОРМА ЗАКАЗА",
     "title": "ЗАКАЗАТЬ УСЛУГУ",
     "form": [
+      {
+        "name": "order",
+        "id": "order",
+        "label": "",
+        "type": "hidden"
+      },
       {
         "name": "name",
         "id": "name4",
@@ -497,6 +515,7 @@
         "type": "phone"
       }
     ],
+    "formAction": "app/mail/sendorder.php",
     "btn": "ОТПРАВИТЬ ЗАПРОС"
   }
 }

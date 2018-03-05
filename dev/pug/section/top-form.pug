@@ -2,7 +2,7 @@ section.top-form#top-form
 	.container
 		.top-form__wrap
 			h2.top-form__title= content.topForm.title
-			form.top-form__form.form(data-validation='')
+			form.top-form__form.form(data-validation='' method="POST" action=content.topForm.formAction)
 				each form in content.topForm.form
 					.top-form__group
 						input.top-form__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])

@@ -59,6 +59,8 @@
 .order__group
 	position relative
 	width 100%
+	&:first-child
+		visibility hidden
 	&+&
 		margin-top 15px
 
@@ -89,8 +91,8 @@
 	@extend .trs
 	@media ({screen-sm})
 		left 15px
-		font-size 16px
-		top 18px
+		font-size 24px
+		top 15px
 
 .order__btn
 	background blue-color

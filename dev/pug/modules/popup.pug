@@ -3,7 +3,7 @@
 	.order__wrap
 		span.order__subtitle= content.order.subtitle
 		h4.order__title= content.order.title
-		form.form.order__form(data-validation='')
+		form.form.order__form(data-validation='' method="POST" action=content.order.formAction)
 			each form in content.order.form
 				.order__group
 					input.order__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])

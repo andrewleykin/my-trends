@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Мои тренды</title>
+    <title>Мои тендеры</title>
     <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -43,6 +43,7 @@
         </header>
         <!-- / Header-->
         <!-- Content-->
+        <!-- Mobile menu-->
         <div class="remodal mobile" data-remodal-id="mobile">
           <div class="mobile__header">
             <div class="mobile__logo"><img src="app/img/general/logo--mobile.png" alt="ООО “МОИ ТЕНДЕРЫ”"></div>
@@ -61,6 +62,7 @@
             <button class="mobile__link" type="button" data-remodal-action="close">ПЕРЕЙТИ НА САЙТ</button>
           </div>
         </div>
+        <!-- / Mobile menu-->
         <!-- Top-banner-->
         <section class="top-banner" id="top-banner">
           <div class="container">
@@ -98,7 +100,7 @@
           <div class="container">
             <div class="top-form__wrap">
               <h2 class="top-form__title">ОТПРАВЬТЕ ЗАЯВКУ, ЧТОБЫ ПОЛУЧИТЬ ПОЛНЫЙ ПРАЙС-ЛИСТ</h2>
-              <form class="top-form__form form" data-validation="">
+              <form class="top-form__form form" data-validation="" method="POST" action="app/mail/sendpricelist.php">
                 <div class="top-form__group">
                   <input class="top-form__input" type="text" name="name" id="name" data-name="name">
                   <label class="top-form__label label" for="name">Введите ваше имя</label>
@@ -196,7 +198,7 @@
                 <p class="selection__text">Мы предоставляем подборку тендеров по выбранной вами тематике бесплатно. Мы будем рады вам помочь!</p>
               </div>
               <div class="selection__descr"><span class="selection__call">Позвоните по телефону</span><a class="selection__phone" href="tel:+74955057984">+7 (495)<span>505-79-84</span></a><span class="selection__fill">Или заполните анкету</span>
-                <form class="selection__form form" action="#" data-validation="">
+                <form class="selection__form form" data-validation="" method="POST" action="app/mail/sendselection.php">
                   <div class="selection__group">
                     <input class="selection__input" type="text" name="text" id="company" data-name="text">
                     <label class="selection__label label" for="company">Введите название компании</label>
@@ -214,10 +216,10 @@
                     <label class="selection__label label" for="phone">Введите номер телефона*</label>
                   </div>
                   <div class="selection__group">
-                    <input class="selection__input" type="text" name="text" id="theme" data-name="text">
+                    <input class="selection__input" type="text" name="text2" id="theme" data-name="text">
                     <label class="selection__label label" for="theme">Тематика тендера</label>
                   </div>
-                  <button class="selection__btn" type="submit">Получить бесплатную подборку тендеров</button>
+                  <button class="selection__btn" type="submit">Получить бесплатную<span>подборку тендеров</span></button>
                 </form>
               </div>
             </div>
@@ -355,7 +357,7 @@
                 </div>
                 <div class="preparation__form-wrap">
                   <h3 class="preparation__form-title">ЗАКАЗАТЬ ЗВОНОК</h3><span class="preparation__form-subtitle">И ОБЪЯСНИТЬ ЗАДАЧУ ПО ТЕЛЕФОНУ</span>
-                  <form class="preparation__form form" action="#" data-validation="">
+                  <form class="preparation__form form" data-validation="" method="POST" action="app/mail/sendphone.php">
                     <div class="preparation__group">
                       <input class="preparation__input" type="text" name="name" id="name2" data-name="name">
                       <label class="preparation__label label" for="name2">Введите ваше имя</label>
@@ -422,19 +424,21 @@
               </div>
             </div>
           </div>
+          <!-- Reviews popup-->
+          <div class="remodal reviews__popup" data-remodal-id="reviews1">
+            <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/1--big.jpg" alt="Reviews 1--big">
+          </div>
+          <div class="remodal reviews__popup" data-remodal-id="reviews2">
+            <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/2--big.jpg" alt="Reviews 2--big">
+          </div>
+          <div class="remodal reviews__popup" data-remodal-id="reviews3">
+            <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/3--big.jpg" alt="Reviews 3--big">
+          </div>
+          <div class="remodal reviews__popup" data-remodal-id="reviews4">
+            <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/4--big.jpg" alt="Reviews 4--big">
+          </div>
+          <!-- / Reviews popup-->
         </section>
-        <div class="remodal reviews__popup" data-remodal-id="reviews1">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/1--big.jpg" alt="Reviews 1--big">
-        </div>
-        <div class="remodal reviews__popup" data-remodal-id="reviews2">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/2--big.jpg" alt="Reviews 2--big">
-        </div>
-        <div class="remodal reviews__popup" data-remodal-id="reviews3">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/3--big.jpg" alt="Reviews 3--big">
-        </div>
-        <div class="remodal reviews__popup" data-remodal-id="reviews4">
-          <button class="remodal-close" data-remodal-action="close"></button><img src="app/img/content/reviews/4--big.jpg" alt="Reviews 4--big">
-        </div>
         <!-- / Reviews-->
         <!-- Consult-->
         <section class="consult" id="consult">
@@ -451,7 +455,7 @@
                   <h1 class="consult__name">ООО “МОИ ТЕНДЕРЫ”</h1>
                   <p class="consult__address">123610, Москва,  пресненская наб. д.12 ММДЦ «Москва-Сити»,  БЦ «Башня федерации»</p><a class="consult__phone" href="tel:+74955057984">+7 (495) 505-79-84</a><a class="consult__mail" href="mailto:tender@bpoconsult.ru">tender@bpoconsult.ru</a>
                 </div>
-                <form class="consult__form form" action="#" data-validation="">
+                <form class="consult__form form" data-validation="" method="POST" action="app/mail/sendconsult.php">
                   <div class="consult__group">
                     <textarea class="consult__textarea" id="message" name="text" data-name="text"></textarea>
                     <label class="consult__label label" for="message">Опишите проблему</label>
@@ -476,7 +480,11 @@
           <button class="remodal-close order__close" data-remodal-action="close"></button>
           <div class="order__wrap"><span class="order__subtitle">ФОРМА ЗАКАЗА</span>
             <h4 class="order__title">ЗАКАЗАТЬ УСЛУГУ</h4>
-            <form class="form order__form" data-validation="">
+            <form class="form order__form" data-validation="" method="POST" action="app/mail/sendorder.php">
+              <div class="order__group">
+                <input class="order__input" type="hidden" name="order" id="order" data-name="order">
+                <label class="order__label label" for="order"></label>
+              </div>
               <div class="order__group">
                 <input class="order__input" type="text" name="name" id="name4" data-name="name">
                 <label class="order__label label" for="name4">Укажите ваше имя</label>
@@ -498,7 +506,7 @@
         <!-- Footer-->
         <footer class="footer" id="contact">
           <div class="footer__map map" id="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac717afee43cca189965502fe1135e7f49f5f6f5e3dbbd2dd3db2234ec0d458b&amp;amp;source=constructor" width="100%" height="662" frameborder="0"></iframe>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac717afee43cca189965502fe1135e7f49f5f6f5e3dbbd2dd3db2234ec0d458b&amp;amp;width=100%25&amp;amp;height=662&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
           </div>
           <div class="footer__info">
             <div class="footer__contact"><a class="footer__phone" href="tel:+74955057984">+7 (495) 505-79-84</a><a class="footer__mail" href="mailto:tender@bpoconsult.ru">tender@bpoconsult.ru</a></div>

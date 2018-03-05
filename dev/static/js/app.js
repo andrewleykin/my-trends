@@ -170,8 +170,56 @@
 
 // функция мобильного меню
 (function(){
+	var flag = true;
 	if($(window).width() < 768) {
 		var menu =  $('[data-remodal-id=mobile]').remodal();
 		menu.open()
 	}
+	$('.mobile__link').click(function() {
+		if(flag) {
+			$('body, html').animate({scrollTop: 0}, 100);
+			flag = false;
+		}
+	});
+})();
+
+// функция добавления в форму услуги
+(function(){
+	var btn = $('.top-banner__btn>.btn, .package__btn, .services__order'),
+		input = $('.order').find('input#order').val(),
+		topService = [
+			'ПОДГОТОВКА СВЕДЕНИЙ ПО ФОРМЕ-2',
+			'ПОДГОТОВКА ЗАЯВКИ НА ОТКРЫТЫЙ КОНКУРС ПО 44 ФЗ',
+			'ПОДГОТОВКА ЗАЯВКИ НА ЛЮБОЙ ВИД ТОРГОВ ПО 223-ФЗ'
+		],
+		packages = [
+			'Пакет - СТАРТ',
+			'Пакет - СТАНДАРТ',
+			'Пакет - ПРЕМИУМ'
+		],
+		services = [
+			'ОФОРМЛЕНИЕ ЭЦП ДЛЯ УЧАСТИЯ В ТОРГАХ',
+			'АККРЕДИТАЦИЯ НА 5 ФЕДЕРАЛЬНЫХ ПЛОЩАДКАХ',
+			'МОНИТОРИНГ ТЕНДЕРОВ, В ТЕЧЕНИЕ 1 МЕСЯЦА',
+			'ПОДГОТОВКА ЗАЯВКИ И УЧАСТИЕ В АУКЦИОНЕ',
+			'ПОДГОТОВКА СВЕДЕНИЙ О МАТЕРИАЛАХ (ФОРМА 2)',
+			'ПОДГОТОВКА И ПОДАЧА ЖАЛОБ В ФАС'
+		];
+
+	btn.click(function() {
+		var thisBtn = $(this),
+			index;
+		if(thisBtn.closest('.top-banner__item')) {
+			index = thisBtn.closest('.top-banner__item').index();
+			input = topService[index];
+		}
+		if (thisBtn.closest('.package__item')) {
+			index = thisBtn.closest('.package__item').index();
+			input = packages[index];
+		} 
+		if (thisBtn.closest('.services__item')) {
+			index = thisBtn.closest('.services__item').index();
+			input = services[index];
+		}
+	});
 })();

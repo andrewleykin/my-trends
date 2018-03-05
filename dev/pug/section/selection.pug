@@ -11,9 +11,10 @@ section.selection#selection
 				a.selection__phone(href=content.general.phone.link)= content.general.phone.text.start
 					span= content.general.phone.text.end
 				span.selection__fill= content.selection.fill
-				form.selection__form.form(action="#", data-validation='')
+				form.selection__form.form(data-validation='' method="POST" action=content.selection.formAction)
 					each form in content.selection.form
 						.selection__group
-							input.selection__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])
+							input.selection__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["data"])
 							label.selection__label.label(for=form["id"])= form["label"]
-					button.selection__btn(type="submit")= content.selection.btn
+					button.selection__btn(type="submit")= content.selection.btn.start
+						span= content.selection.btn.end

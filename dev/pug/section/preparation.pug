@@ -18,7 +18,7 @@ section.preparation
 				.preparation__form-wrap
 					h3.preparation__form-title= content.preparation.formTitle
 					span.preparation__form-subtitle= content.preparation.formSubtitle
-					form.preparation__form.form(action="#", data-validation='')
+					form.preparation__form.form(data-validation='' method="POST" action=content.preparation.formAction)
 						each form in content.preparation.form
 							.preparation__group
 								input.preparation__input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])

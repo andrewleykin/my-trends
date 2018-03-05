@@ -27,11 +27,6 @@
 .package__item
 	max-width 340px
 	color dark-color
-	&:nth-child(2)
-		.package__btn
-			background red-color
-			&:hover
-				background darken(red-color, 20%)
 	@media ({screen-xl})
 		max-width 33%
 
@@ -84,7 +79,6 @@
 .package__btn
 	display block
 	max-width 190px
-	background #808080
 	color white
 	cursor pointer
 	border-radius 5px
@@ -94,5 +88,6 @@
 	font-weight 700
 	padding 12px 43px 10px 46px
 	@extend .trs
+	background red-color
 	&:hover
-		background darken(#808080, 20%) 
+		background darken(red-color, 20%)
