@@ -20,7 +20,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('offer-from-my-tenders@mail.ru'); // От кого будет уходить письмо?
-$mail->addAddress('katashi1328@mail.ru'); // Кому будет уходить письмо
+$mail->addAddress('a.scherbakov@basis.ru'); // Кому будет уходить письмо
 
 $mail->isHTML(true);
 $mail->Subject = 'Мои Тендеры - Заказать услугу'; // Тема письма

@@ -71,7 +71,7 @@
 	function initializeValidate() {
 		$('[data-validation]').each(function () {
 		    var validator = $(this),
-		        inputs = validator.find('input:not(:checkbox), textarea'),
+		        inputs = validator.find('input:not(:checkbox, #order), textarea'),
 		        submit = validator.find('button[type=submit]'),
 		        stopSubmit = false;
 
@@ -186,7 +186,7 @@
 // функция добавления в форму услуги
 (function(){
 	var btn = $('.top-banner__btn>.btn, .package__btn, .services__order'),
-		input = $('.order').find('input#order').val(),
+		input = $('.order').find('input#order'),
 		topService = [
 			'ПОДГОТОВКА СВЕДЕНИЙ ПО ФОРМЕ-2',
 			'ПОДГОТОВКА ЗАЯВКИ НА ОТКРЫТЫЙ КОНКУРС ПО 44 ФЗ',
@@ -211,15 +211,15 @@
 			index;
 		if(thisBtn.closest('.top-banner__item')) {
 			index = thisBtn.closest('.top-banner__item').index();
-			input = topService[index];
+			input.attr('value',topService[index]);
 		}
 		if (thisBtn.closest('.package__item')) {
 			index = thisBtn.closest('.package__item').index();
-			input = packages[index];
+			input.attr('value',packages[index]);
 		} 
 		if (thisBtn.closest('.services__item')) {
 			index = thisBtn.closest('.services__item').index();
-			input = services[index];
+			input.attr('value',services[index]);
 		}
 	});
 })();
